@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GreatLion Technology，提供海外AI服务购买、虚拟信用卡支付、NASDAQ大屏广告投放和跨境资金结算服务。">
+    <meta name="keywords" content="ChatGPT企业订阅, Claude, NASDAQ广告, 美国虚拟信用卡, 外贸支付, 跨境结算, GreatLion Technology">
+    <title>GreatLion Technology - Premium US Payment Solutions</title>
+    <style>
+        :root {
+            --primary: #4DA8FF;
+            --secondary: #FFC107;
+            --dark: #f5f5f5;
+            --darker: #ffffff;
+            --gray: #555555;
+            --light-gray: #eeeeee;
+            --text: #333333;
+            --text-muted: #666666;
+            --card-bg: #ffffff;
+            --card-border: #e0e0e0;
+            --nav-bg: rgba(255, 255, 255, 0.9);
+            --footer-bg: #333333;
+            --footer-text: #f8f8f8;
+            --process-bg: #f0f0f0;
+            --contact-bg: #f8f8f8;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+        
+        body {
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--dark);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* 确保页面至少有视口高度 */
+        }
+        
+        main {
+            flex: 1; /* 使主体内容占据所有可用空间 */
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* Navigation */
+        header {
+            background-color: var(--nav-bg);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--text);
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+        
+        .logo span {
+            color: var(--secondary);
+            background: linear-gradient(135deg, #FFC107 0%, #FFDA66 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .logo-icon {
+            margin-right: 10px;
+            font-size: 28px;
+            color: var(--secondary);
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 30px;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 500;
+            transition: color 0.3s;
+            position: relative;
+        }
+        
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: var(--secondary);
+            transition: width 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: var(--secondary);
+        }
+        
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 10px 25px;
+            background: linear-gradient(135deg, #4DA8FF 0%, #2E8AE6 100%);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.3s;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(77, 168, 255, 0.3);
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(77, 168, 255, 0.4);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: var(--secondary);
+            border: 1px solid var(--secondary);
+            box-shadow: none;
+        }
+        
+        .btn-secondary:hover {
+            background-color: rgba(255, 193, 7, 0.1);
+            box-shadow: 0 4px 15px rgba(255, 193, 7, 0.2);
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.8) 0%, rgba(245, 245, 245, 0.8) 100%), url('hero.jpg') center/cover no-repeat;
+            padding: 120px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+            color: var(--text);
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            color: var(--text-muted);
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        /* Services Section */
+        .services {
+            padding: 100px 0;
+            background-color: var(--darker);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 70px;
+            position: relative;
+        }
+        
+        .section-header h2 {
+            font-size: 2.5rem;
+            color: var(--text);
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-header h2::after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .section-header p {
+            color: var(--text-muted);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .service-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 12px;
+            padding: 40px 30px;
+            transition: all 0.4s;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(to right, var(--primary), transparent);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.4s;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            border-color: rgba(77, 168, 255, 0.2);
+        }
+        
+        .service-card:hover::before {
+            transform: scaleX(1);
+        }
+        
+        .service-icon {
+            margin-bottom: 25px;
+            display: inline-block;
+            position: relative;
+        }
+        
+        .service-icon img {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--text);
+            position: relative;
+            display: inline-block;
+        }
+        
+        .service-card p {
+            color: var(--text-muted);
+            line-height: 1.7;
+        }
+        
+        /* Process Section */
+        .process {
+            padding: 100px 0;
+            background-color: var(--process-bg);
+            position: relative;
+        }
+        
+        .process-steps {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 70px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .process-steps::before {
+            content: '';
+            position: absolute;
+            top: 40px;
+            left: 10%;
+            width: 80%;
+            height: 2px;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            z-index: -1;
+        }
+        
+        .step {
+            text-align: center;
+            width: 220px;
+            position: relative;
+        }
+        
+        .step-number {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary) 0%, #2E8AE6 100%);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin: 0 auto 25px;
+            position: relative;
+            z-index: 2;
+            box-shadow: 0 10px 20px rgba(77, 168, 255, 0.3);
+        }
+        
+        .step-number::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            border: 1px solid rgba(77, 168, 255, 0.3);
+            animation: pulse 2s infinite;
+            z-index: -1;
+        }
+        
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1.5);
+                opacity: 0;
+            }
+        }
+        
+        .step h3 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: var(--text);
+        }
+        
+        .step p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+        
+        /* Case Studies Section */
+        .case-studies {
+            padding: 100px 0;
+            background-color: var(--darker);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .case-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .case-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.4s;
+            text-decoration: none;
+            color: var(--text);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .case-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .case-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .case-card h3 {
+            font-size: 1.3rem;
+            margin: 20px 20px 10px;
+            color: var(--text);
+        }
+        
+        .case-card p {
+            color: var(--text-muted);
+            margin: 0 20px 20px;
+            line-height: 1.5;
+        }
+        
+        /* About Section */
+        .about {
+            padding: 100px 0;
+            background-color: var(--dark);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .about-text h2 {
+            font-size: 2.5rem;
+            color: var(--text);
+            margin-bottom: 25px;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .about-text h2::after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            bottom: -10px;
+            left: 0;
+        }
+        
+        .about-text p {
+            margin-bottom: 20px;
+            color: var(--text-muted);
+            line-height: 1.8;
+        }
+        
+        .about-image {
+            position: relative;
+        }
+        
+        .about-image img {
+            max-width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 1;
+            border: 1px solid var(--card-border);
+        }
+        
+        .about-image::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 12px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            top: 20px;
+            left: 20px;
+            z-index: 0;
+            opacity: 0.2;
+        }
+        
+        /* Testimonials Section */
+        .testimonials {
+            padding: 100px 0;
+            background-color: var(--darker);
+            position: relative;
+        }
+        
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 60px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .testimonial {
+            background-color: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 12px;
+            padding: 35px;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .testimonial:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            border-color: rgba(77, 168, 255, 0.2);
+        }
+        
+        .testimonial::before {
+            content: '"';
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 6rem;
+            color: rgba(0, 0, 0, 0.05);
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 25px;
+            color: var(--text-muted);
+            position: relative;
+            z-index: 1;
+            line-height: 1.8;
+        }
+        
+        .client {
+            display: flex;
+            align-items: center;
+        }
+        
+        .client-image {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 15px;
+            overflow: hidden;
+            background-color: var(--light-gray);
+            border: 2px solid rgba(77, 168, 255, 0.3);
+        }
+        
+        .client-info h4 {
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+            color: var(--text);
+        }
+        
+        .client-info p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+        
+        /* Contact Section */
+        .contact {
+            padding: 100px 0;
+            background-color: var(--contact-bg);
+            position: relative;
+            overflow: hidden;
+            margin-top: auto; /* 确保联系部分在页面底部 */
+        }
+        
+        .contact-section-title {
+            background-color: #4668c9;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-bottom: 30px;
+            position: relative;
+        }
+        
+        .contact-section-title h2 {
+            font-size: 2.2rem;
+            margin: 0;
+        }
+        
+        .contact-section-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background-color: #FFC107;
+            margin: 10px auto 0;
+        }
+        
+        .contact-subtitle {
+            text-align: center;
+            color: var(--text-muted);
+            margin-bottom: 50px;
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .contact-info-title {
+            position: relative;
+            color: var(--text);
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .contact-info-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background-color: var(--primary);
+        }
+        
+        .contact-method {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        
+        .contact-icon-wrapper {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: rgba(77, 168, 255, 0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 20px;
+            border: 1px solid rgba(77, 168, 255, 0.2);
+        }
+        
+        .contact-icon {
+            font-size: 1.4rem;
+            color: var(--primary);
+        }
+        
+        .contact-method:hover .contact-icon-wrapper {
+            background: linear-gradient(135deg, rgba(77, 168, 255, 0.2) 0%, rgba(46, 138, 230, 0.2) 100%);
+            transform: scale(1.1);
+        }
+        
+        .contact-text h4 {
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+            color: var(--text);
+        }
+        
+        .contact-text p {
+            color: var(--text-muted);
+            font-size: 1rem;
+        }
+        
+        .contact-form .form-group {
+            margin-bottom: 25px;
+        }
+        
+        .contact-form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: var(--text);
+        }
+        
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 15px;
+            background-color: white;
+            border: 1px solid var(--card-border);
+            border-radius: 8px;
+            font-size: 1rem;
+            color: var(--text);
+            transition: all 0.3s;
+        }
+        
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            background-color: rgba(77, 168, 255, 0.05);
+            box-shadow: 0 0 10px rgba(77, 168, 255, 0.1);
+        }
+        
+        .contact-form textarea {
+            height: 150px;
+            resize: vertical;
+        }
+        
+        .contact-form button {
+            background-color: #4668c9;
+            padding: 12px 30px;
+            font-size: 1.1rem;
+            font-weight: 500;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        
+        .contact-form button:hover {
+            background-color: #3a58b0;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--footer-bg);
+            color: var(--footer-text);
+            padding: 70px 0 20px;
+            position: relative;
+        }
+        
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.1), transparent);
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+        
+        .footer-col h3 {
+            font-size: 1.3rem;
+            margin-bottom: 25px;
+            color: var(--footer-text);
+            position: relative;
+            display: inline-block;
+        }
+        
+        .footer-col h3::after {
+            content: '';
+            position: absolute;
+            width: 30px;
+            height: 2px;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            bottom: -10px;
+            left: 0;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+        
+        .footer-links a {
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.7);
+            transition: all 0.3s;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .footer-links a::before {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 1px;
+            bottom: -2px;
+            left: 0;
+            background-color: var(--primary);
+            transition: width 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: var(--primary);
+            padding-left: 5px;
+        }
+        
+        .footer-links a:hover::before {
+            width: 100%;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-link {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.7);
+            transition: all 0.3s;
+        }
+        
+        .social-link:hover {
+            background-color: var(--primary);
+            color: white;
+            transform: translateY(-5px);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .process-steps {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .process-steps::before {
+                display: none;
+            }
+            
+            .step {
+                margin-bottom: 50px;
+            }
+            
+            .about-content,
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .section-header h2 {
+                font-size: 2rem;
+            }
+        }
+        
+        /* Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <!-- Header Navigation -->
+        <header>
+            <div class="container">
+                <nav>
+                    <div class="logo">
+                        <div class="logo-icon">🦁</div>
+                        Great<span>Lion</span> Technology
+                    </div>
+                    <ul class="nav-links">
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#process">Process</a></li>
+                        <li><a href="#case-studies">Case Studies</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <a href="#contact" class="btn">Get Started</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>Bridging Global Businesses to US Digital Services</h1>
+                <p>We help businesses worldwide access ChatGPT, Claude, NASDAQ advertising, and other US digital products by providing seamless cross-border payment solutions</p>
+                <div class="hero-buttons">
+                    <a href="#services" class="btn">Explore Our Services</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Us</a>
+                </div>
+            </div>
+        </section>
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Services</h2>
+                    <p>Providing convenient, secure payment solutions for US digital services to global businesses</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="6.png" alt="AI服务购买">
+                        </div>
+                        <h3>AI Service Access&emsp;&emsp;&emsp;&emsp;</h3>
+                        <p>Helping businesses easily access ChatGPT, Claude, Midjourney and other US AI services by overcoming payment restrictions</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="4.png" alt="虚拟信用卡支付服务">
+                        </div>
+                        <h3>Virtual Card Payments</h3>
+                        <p>Providing US virtual credit card services to solve payment issues for businesses unable to directly pay for US services</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="5.png" alt="NASDAQ广告投屏服务">
+                        </div>
+                        <h3>NASDAQ Advertising&emsp;</h3>
+                        <p>Assisting companies in placing advertisements on the NASDAQ billboard to enhance their international brand presence</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="2.jpg" alt="USD跨境资金结算">
+                        </div>
+                        <h3>USD Settlement&emsp;&emsp;&emsp;&emsp;</h3>
+                        <p>Offering compliant USD settlement channels to ensure safe and timely fund transfers</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="3.jpg" alt="软件订阅服务">
+                        </div>
+                        <h3>Software Subscription</h3>
+                        <p>Purchasing subscriptions for Adobe, Microsoft, and other US software services on your behalf, eliminating cross-border payment difficulties</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="7.png" alt="跨境合规咨询">
+                        </div>
+                        <h3>Compliance Consulting</h3>
+                        <p>Providing cross-border payment compliance consulting to ensure legal business operations</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section id="process" class="process">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Simple Four-Step Process</h2>
+                    <p>We've streamlined the entire service process to help you quickly obtain the US digital services you need</p>
+                </div>
+                <div class="process-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h3>Initial Consultation</h3>
+                        <p>Tell us about the specific services and budget you need</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h3>Solution Confirmation</h3>
+                        <p>We provide a customized solution with clear pricing</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h3>Secure Payment</h3>
+                        <p>Make your payment to us through secure channels</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <h3>Service Activation</h3>
+                        <p>We activate your services and provide ongoing support</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Case Studies Section -->
+        <section id="case-studies" class="case-studies">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Client Success Cases</h2>
+                    <p>Real client success stories shared with you</p>
+                </div>
+                <div class="case-grid">
+                    <div class="case-card">
+                        <img src="6.png" alt="ChatGPT Enterprise Subscription Success Case">
+                        <h3>ChatGPT Enterprise Subscription Success</h3>
+                        <p>Helping a Shenzhen tech company successfully subscribe to ChatGPT Enterprise.</p>
+                    </div>
+                    <div class="case-card">
+                        <img src="5.png" alt="NASDAQ Advertisement Success Case">
+                        <h3>NASDAQ Advertisement Success</h3>
+                        <p>Hangzhou listed company successfully enhances brand influence through NASDAQ ads.</p>
+                    </div>
+                    <div class="case-card">
+                        <img src="2.jpg" alt="Cross-border Payment Success Case">
+                        <h3>Cross-border Payment Success</h3>
+                        <p>Providing stable and fast cross-border settlement solutions for Beijing foreign trade companies.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>About GreatLion Technology</h2>
+                        <p>GreatLion Technology Limited was established on January 28, 2025, as a specialized service provider focused on delivering US digital service payment solutions to businesses worldwide. We're headquartered in Denver, Colorado, with a professional team and extensive industry experience.</p>
+                        <p>We understand the challenges businesses face when trying to access US digital services, especially the hurdles in the payment process. Through our services, businesses can easily access AI services including ChatGPT and Claude, as well as NASDAQ billboard advertising and other US digital products.</p>
+                        <p>Our mission is to break down digital barriers and provide convenient, secure, and compliant cross-border payment solutions to help businesses seize opportunities in the global landscape.</p>
+                        <a href="#contact" class="btn">Partner With Us</a>
+                    </div>
+                    <div class="about-image">
+                        <img src="about.jpg" alt="GreatLion Technology Office">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Client Testimonials</h2>
+                    <p>Hear what our clients have to say about our services</p>
+                </div>
+                <div class="testimonials-grid">
+                    <div class="testimonial">
+                        <p class="testimonial-text">"GreatLion Technology solved our long-standing AI service payment issues. Now we can smoothly use ChatGPT and Claude for product development, significantly improving our efficiency."</p>
+                        <div class="client">
+                            <div class="client-image"></div>
+                            <div class="client-info">
+                                <h4>Michael Chen</h4>
+                                <p>CEO, Shenzhen Tech Company</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <p class="testimonial-text">"NASDAQ billboard advertising has always been our dream for entering the international market. GreatLion helped us achieve this dream with very professional service."</p>
+                        <div class="client">
+                            <div class="client-image"></div>
+                            <div class="client-info">
+                                <h4>Sarah Lin</h4>
+                                <p>Marketing Director, Hangzhou Listed Company</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <p class="testimonial-text">"Their virtual card services are extremely reliable, allowing us to easily subscribe to various US software services without any hassle."</p>
+                        <div class="client">
+                            <div class="client-image"></div>
+                            <div class="client-info">
+                                <h4>David Wang</h4>
+                                <p>Lead Designer, Beijing Design Studio</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+      <!-- Contact Section -->
+        <section id="contact" class="contact">
+        <div class="contact-section-title">
+            <h2>Contact Us</h2>
+        </div>
+        <div class="container">
+            <p class="contact-subtitle">Feel free to reach out with any questions or needs</p>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3 class="contact-info-title">Contact Information</h3>
+                    <div class="contact-method">
+                        <div class="contact-icon-wrapper">
+                            <div class="contact-icon">📧</div>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Email</h4>
+                            <p>info@greatliontech.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-method">
+                        <div class="contact-icon-wrapper">
+                            <div class="contact-icon">☎️</div>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Phone</h4>
+                            <p>+1 (888) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-method">
+                        <div class="contact-icon-wrapper">
+                            <div class="contact-icon">💬</div>
+                        </div>
+                        <div class="contact-text">
+                            <h4>WeChat</h4>
+                            <p>GreatLionTech</p>
+                        </div>
+                    </div>
+                    <div class="contact-method">
+                        <div class="contact-icon-wrapper">
+                            <div class="contact-icon">🏢</div>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Office Address</h4>
+                            <p>1312 17th Street Unit #2626, Denver, Colorado 80202, USA</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Company Name</label>
+                        <input type="text" id="company" placeholder="Enter your company name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Requirements</label>
+                        <textarea id="message" placeholder="Please describe your needs in detail..."></textarea>
+                    </div>
+                    <button type="submit" class="btn">Submit Request</button>
+                </form>
+            </div>
+        </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>GreatLion Technology</h3>
+                    <p>Bridging global businesses with US digital services, providing convenient and secure cross-border payment solutions.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📱</a>
+                        <a href="#" class="social-link">📘</a>
+                        <a href="#" class="social-link">📸</a>
+                        <a href="#" class="social-link">🔗</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#services">AI Service Access</a></li>
+                        <li><a href="#services">Virtual Card Payments</a></li>
+                        <li><a href="#services">NASDAQ Advertising</a></li>
+                        <li><a href="#services">USD Settlement</a></li>
+                        <li><a href="#services">Software Subscriptions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#process">Process</a></li>
+                        <li><a href="#case-studies">Case Studies</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Legal</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Compliance Statement</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 GreatLion Technology Limited. All rights reserved.</p>
+                <p>Address: 1312 17th Street Unit #2626, Denver, Colorado 80202, USA</p>
+                <p>Email: info@greatliontech.com | Phone: +1 (888) 123-4567 | WeChat: GreatLionTech</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple animation for elements
+        document.addEventListener('DOMContentLoaded', () => {
+            const animateElements = () => {
+                const elements = document.querySelectorAll('.service-card, .step, .about-text, .about-image, .testimonial, .case-card');
+                
+                elements.forEach(element => {
+                    const position = element.getBoundingClientRect().top;
+                    const screenPosition = window.innerHeight / 1.3;
+                    
+                    if (position < screenPosition) {
+                        element.classList.add('animate');
+                    }
+                });
+            };
+            
+            window.addEventListener('scroll', animateElements);
+            animateElements(); // Run once on load
+        });
+    </script>
+</body>
+</html>
+
+        
+
+    
